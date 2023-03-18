@@ -7,6 +7,9 @@ import { ResponsiveDirective } from './directives/responsive.directive';
 import { EducationComponent } from './components/education/education.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { PersonalInformationComponent } from './components/personal-information/personal-information.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { ProjectComponent } from './components/project/project.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { PersonalInformationComponent } from './components/personal-information/
     ResponsiveDirective,
     EducationComponent,
     ExperienceComponent,
-    PersonalInformationComponent
+    PersonalInformationComponent,
+    SkillsComponent,
+    ProjectComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule
