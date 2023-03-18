@@ -27,24 +27,6 @@ export class ProjectComponent  implements OnInit{
           'Useful app'
       ]
     
-    },{
-      title:"QR Code Generator",
-      technologies:'Android, Flutter, Dart',
-      description:[
-          'Created from scratch',
-          'Uploaded it to playstore ',
-          'Useful app'
-      ]
-    
-    },{
-      title:"QR Code Generator",
-      technologies:'Android, Flutter, Dart',
-      description:[
-          'Created from scratch',
-          'Uploaded it to playstore ',
-          'Useful app'
-      ]
-    
     }
   ]
 
