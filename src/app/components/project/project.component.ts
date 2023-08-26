@@ -23,7 +23,7 @@ export class ProjectComponent  implements OnInit{
       technologies:'Android, Flutter, Dart',
       description:[
           'Created from scratch',
-          'Available on playstore ',
+          'Available on Google playstore ',
           'Useful app'
       ]
     
