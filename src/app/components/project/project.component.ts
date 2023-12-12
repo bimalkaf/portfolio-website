@@ -6,32 +6,42 @@ import { ProjectModel } from 'src/app/models/model';
   templateUrl: './project.component.html',
   styleUrls: ['./project.component.css']
 })
-export class ProjectComponent  implements OnInit{
+export class ProjectComponent implements OnInit {
 
-  projects : ProjectModel[] = [
+  projects: ProjectModel[] = [
     {
-      title:"B Notes",
-      technologies:'Android, Java, XML',
-      description:[
-          'Created from scratch',
-          'Uploaded it to playstore ',
-          '100+ downloads'
+      title: "Nepal Licence Exam app",
+      technologies: 'Android, Kotlin, Dagger Hilt, MVVM',
+      description: [
+        'Created from scratch',
+        'Uploaded it to playstore ',
+        '1K+ downloads'
       ]
-    
-    },{
-      title:"QR Code Generator",
-      technologies:'Android, Flutter, Dart',
-      description:[
-          'Created from scratch',
-          'Available on Google playstore ',
-          'Useful app'
+
+    },
+    {
+      title: "B Notes",
+      technologies: 'Android, Java, XML',
+      description: [
+        'Created from scratch',
+        'Uploaded it to playstore ',
+        '100+ downloads'
       ]
-    
+
+    }, {
+      title: "QR Code Generator",
+      technologies: 'Android, Flutter, Dart',
+      description: [
+        'Created from scratch',
+        'Available on Google playstore ',
+        'Useful app'
+      ]
+
     }
   ]
 
   ngOnInit(): void {
-   
+
   }
 
 }
