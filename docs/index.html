@@ -1,3 +1,497 @@
-<html>
-    Bimal kafle test
-</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="icon" href="assets/fav/favicon-32x32.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/fav/favicon-16x16.png"
+      type="image/x-icon">
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Bimal Kafle</div>
+      <div>
+        <ul class="nav-links">
+          <!-- <li><a href="#about">About</a></li> -->
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Bimal Kafle</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Bimal Kafle profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hi, I'm</p>
+        <h1 class="title">Bimal Kafle</h1>
+        <p class="section__text__p2">Full Stack Software Developer</p>
+        <div class="text-container">
+          <p>
+            An experienced coder focusing on Java Spring Boot microservices. I
+            spend my days writing top-notch code and solving complex problems.
+            Outside of regular job, I'm passionate about teaching Android on
+            YouTube, aiming to inspire and guide the future developer
+            community. Join me in exploring the coding world with clarity and
+            purpose.
+          </p>
+        </div>
+        <br>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')">
+            Resume
+          </button>
+          <!-- <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button> -->
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="openNewTab('https://www.linkedin.com/in/bimalkafle')" />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="openNewTab('https://github.com/bimalkaf')" />
+          <img
+            src="./assets/youtube.png"
+            alt="My Youtube profile"
+            class="icon"
+            onclick="openNewTab('https://www.youtube.com/@EasyTuto1')" />
+        </div>
+      </div>
+    </section>
+    <section id="experience">
+
+      <h1 class="title">Organizations</h1>
+      <p class="section__text__p1">I have worked on</p>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic" />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/capgemini.png"
+                alt="Experience icon"
+                class="icon" />
+              <h3>Capgemini</h3>
+              <p class="hash_tag">Apr 2021-Oct 2023 (2.6 years) <br /><br>
+                Implemented robust Electric Vehicle (EV) solutions at Capgemini,
+                developing microservices with features such as a Reservation
+                System, User Login/Signup, and integrated payment gateways like
+                Stripe. Applied end-to-end AES encryption for heightened
+                security and facilitated user access to their wallets via QR
+                code scanning. Contributed effectively to the dynamic Capgemini
+                team, ensuring secure and efficient EV charging functionalities.</p>
+              <br>
+              <p class="hash_tag"> Java Spring Boot, Rest API, Hibernate, MSSQL,
+                Postman, Flutter, Android, AWS
+              </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/intouch.png"
+                alt="Experience icon"
+                class="icon" />
+              <h3>Intouch App</h3>
+              <p class="hash_tag">Jan 2020-Jul 2020 (6 month) <br /><br>
+                Drove impactful contributions as an Android Developer Intern at
+                InTouchApp, a widely-used contact sync application with 1
+                million+ downloads. Integrated vital features like chat
+                functionality, media recording, and a sophisticated media
+                player. Additionally, innovated group chat dynamics with the
+                implementation of anonymous chat, enhancing the app's
+                versatility and fostering engaging and private conversations
+                within group interactions.</p>
+              <br>
+              <p class="hash_tag"> Kotlin, Java, Android Studio , BitBucket,
+                Retrofit, MVVM Clean Architecture
+              </p>
+            </div>
+
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#experience'" />
+      </section>
+      <!-- <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Tech</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Android</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Flutter</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Angular</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Tech</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Spring Boot</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Firebase</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Tools & Frameworks</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'" />
+    </section> -->
+      <section id="projects">
+
+        <h1 class="title">Projects</h1>
+        <p class="section__text__p1">All my personal</p>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <!-- Project 1  -->
+            <div class="details-container project-click color-container"
+              onclick="openNewTab('https://github.com/bimalkaf/Android_Chat_Application')">
+              <div class="article-container">
+                <img
+                  src="./assets/project-images/android-chat-app.gif"
+                  alt="Project 1"
+                  class="project-img" />
+              </div>
+
+              <h2 class="experience-sub-title project-title">Android Chat App</h2>
+              <p>Firebase Chat App: Robust Authentication, Realtime Chat, and
+                End-to-End Notifications ensure secure and dynamic communication
+                for a seamless user experience.
+                <p class="hash_tag"> #Java #Android #Firebase #Firestore #FCM
+                </p>
+              </div>
+              <!-- Project 2 -->
+
+              <div class="details-container project-click color-container"
+                onclick="openNewTab('https://github.com/bimalkaf/Android_MVVM_Retrofit')">
+                <div class="article-container">
+                  <img
+                    src="./assets/project-images/android-weather-app.gif"
+                    alt="Project 1"
+                    class="project-img" />
+                </div>
+                <h2 class="experience-sub-title project-title">Weather App</h2>
+                <p>Android app displays real-time weather conditions with
+                  dynamic backgrounds, WeatherAPI integration, Clean Code, and
+                  Dependency Injection for optimal performance and user
+                  experience.
+                  <p class="hash_tag"> #Kotlin #MVVM #Retrofit #Glide
+                    #DaggerHilt
+                    #FCM
+                  </p>
+                </div>
+                <!-- Project 3  -->
+                <div class="details-container project-click color-container"
+                  onclick="openNewTab('https://github.com/bimalkaf/Android_ChatGPT')">
+                  <div class="article-container">
+                    <img
+                      src="./assets/project-images/android-chat-gpt.gif"
+                      alt="Project 1"
+                      class="project-img" />
+                  </div>
+                  <h2 class="experience-sub-title project-title">ChatGPT
+                    Clone</h2>
+                  <p> Android ChatBot app integrating OpenAI's GPT-3.
+                    Utilizes OkHttpClient for API calls, RecyclerView for chat
+                    display, and real-time chatbot interaction.
+                    <p class="hash_tag"> #Java #OkHttpClient #RecyclerView
+                      #OpenAI
+                      #API
+                    </p>
+                  </div>
+
+                  <!-- Project 4 -->
+                  <div class="details-container project-click color-container"
+                    onclick="openNewTab('https://github.com/bimalkaf/Android_QuizAppWithFirebase')">
+                    <div class="article-container">
+                      <img
+                        src="./assets/project-images/android-quiz-app.gif"
+                        alt="Project 1"
+                        class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Online Quiz
+                      App</h2>
+                    <p> Quiz App with interactive UI,also enabling
+                      unlimited Quiz Models with automatic Realtime Database
+                      sync
+                      for seamless updates.
+                      <p class="hash_tag"> #Kotlin #Firebase #RealtimeDatabase
+                        #CleanUI
+                        #FCM
+                      </p>
+                    </div>
+
+                  </div>
+
+                  <!-- Project next line -->
+                  <div class="about-containers">
+
+                    <!-- Project 5-->
+                    <div
+                      class="details-container project-click color-container"
+                      onclick="openNewTab('https://github.com/bimalkaf/Android_Shorts_Video_App')">
+                      <div class="article-container">
+                        <img
+                          src="./assets/project-images/android-tiktok-clone.gif"
+                          alt="Project 1"
+                          class="project-img" />
+                      </div>
+                      <h2 class="experience-sub-title project-title">Mini
+                        clip(Tiktok Clone)</h2>
+                      <p> Shorts App, inspired by TikTok, allows video and
+                        profile picture uploads to Firebase, with swipe
+                        navigation and user authentication.
+                        <p class="hash_tag"> #Kotlin #FirebaseStorage
+                          #MediaPlayer
+                          #FirebaseAuthentication #MediaPicker #Glide
+                        </p>
+                      </div>
+                      <!-- Project 6 -->
+                      <div
+                        class="details-container project-click color-container"
+                        onclick="openNewTab('https://github.com/bimalkaf/SpringBoot_NotesApp')">
+                        <div class="article-container">
+                          <img
+                            src="./assets/project-images/notes-app-backend.gif"
+                            alt="Project 1"
+                            class="project-img" />
+                        </div>
+                        <h2 class="experience-sub-title project-title">Notes
+                          App
+                          Backend</h2>
+                        <p> Architected a secure and scalable REST API with
+                          Spring
+                          Boot, featuring
+                          authentication and endpoints for note
+                          retrieval, creation, and user management.
+                          <p class="hash_tag"> #Java #SpringBoot #Hibernate
+                            #Postgres #RestAPI
+                          </p>
+                        </div>
+
+                        <!-- Project 7 -->
+                        <div
+                          class="details-container project-click color-container"
+                          onclick="openNewTab('https://github.com/bimalkaf/Android_Simple_FileManager')">
+                          <div class="article-container">
+                            <img
+                              src="./assets/project-images/android-file-manager.gif"
+                              alt="Project 1"
+                              class="project-img" />
+                          </div>
+                          <h2 class="experience-sub-title project-title">File
+                            Manager</h2>
+                          <p>Android File Manager app granting storage
+                            permission, showcasing file/folder listing,
+                            one-click file opening, and versatile operations
+                            like delete, move, and rename.
+                            <p class="hash_tag"> #Java #Permissions
+                              #RecyclerView
+                              #Files
+                            </p>
+                          </div>
+                          <!-- Project 8 -->
+                          <div
+                            class="details-container project-click color-container"
+                            onclick="openNewTab('https://github.com/bimalkaf/Flutter_Simple_WebBrowser')">
+                            <div class="article-container">
+                              <img
+                                src="./assets/project-images/flutter-web-browser.gif"
+                                alt="Project 1"
+                                class="project-img" />
+                            </div>
+                            <h2 class="experience-sub-title project-title">Chrome
+                              Clone Flutter</h2>
+                            <p>Dynamic web browser application, implementing
+                              WebView
+                              for browsing, with features like real-time URL
+                              updates
+                              and intuitive navigation controls.
+                              <p class="hash_tag"> #Flutter #WebView #Dart
+                                #Android
+                              </p>
+                            </div>
+
+                            <!-- Project 6  -->
+
+                          </div>
+
+                        </div>
+                        <img
+                          src="./assets/arrow.png"
+                          alt="Arrow icon"
+                          class="icon arrow"
+                          onclick="location.href='./#contact'" />
+                      </section>
+                      <section id="contact">
+                        <p class="section__text__p1">Get in Touch</p>
+                        <h1 class="title">Contact Me</h1>
+                        <div class="contact-info-upper-container">
+                          <div class="contact-info-container">
+                            <img
+                              src="./assets/email.png"
+                              alt="Email icon"
+                              class="icon contact-icon email-icon" />
+                            <p><a href="mailto:contact@bimalkafle.com.np">contact@bimalkafle.com.np</a></p>
+                          </div>
+                          <div class="contact-info-container">
+                            <img
+                              src="./assets/linkedin.png"
+                              alt="LinkedIn icon"
+                              class="icon contact-icon" />
+                            <p><a
+                                href="https://www.linkedin.com/in/bimalkafle/"
+                                target="_blank">LinkedIn</a></p>
+                          </div>
+                        </div>
+                      </section>
+                      <footer>
+                        <nav>
+                          <div class="nav-links-container">
+                            <ul class="nav-links">
+
+                              <li><a href="#experience">Experience</a></li>
+                              <li><a href="#projects">Projects</a></li>
+                              <li><a href="#educaton">Education</a></li>
+                              <li><a href="#contact">Contact</a></li>
+                            </ul>
+                          </div>
+                        </nav>
+                        <p>Copyright &#169; 2024 Bimal Kafle. All Rights
+                          Reserved.</p>
+                      </footer>
+                      <script src="script.js"></script>
+                    </body>
+                  </html>
