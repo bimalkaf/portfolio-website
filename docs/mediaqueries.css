@@ -85,6 +85,12 @@
     flex-direction: column;
   }
 
+  .details-container {
+    width: 95%;
+    margin-top: 1rem;
+    /* Adjust the margin as needed */
+  }
+
   .contact-info-container {
     margin: 0;
   }
