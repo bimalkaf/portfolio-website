@@ -218,6 +218,7 @@ section {
 .btn-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 1rem;
 }
 
@@ -398,6 +399,7 @@ article .icon {
   /* Add any other hover effects you desire */
 }
 
+
 /* CONTACT */
 
 #contact {
@@ -449,3 +451,51 @@ footer {
 footer p {
   text-align: center;
 }
+
+
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #000000;
+  color: #fff;
+}
+
+/* Update styles for specific elements in dark mode */
+.dark-mode a {
+  color: #bbb;
+  /* Adjust link color in dark mode */
+}
+
+.dark-mode .btn {
+  background-color: #555;
+  /* Adjust button color in dark mode */
+  color: #fff;
+}
+
+
+.dark-mode .details-container {
+
+  background: black;
+
+  border-color: rgb(34, 34, 34);
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode p,
+.dark-mode h6 {
+  color: #fff;
+}
+
+.dark-mode .hamburger-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: wheat;
+  transition: all 0.3 ease-in-out;
+}
+
+/* Add this to your CSS */
+
+/* Toggle Button Styles */
